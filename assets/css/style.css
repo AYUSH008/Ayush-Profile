@@ -32,7 +32,7 @@ html, body {
 .btn-resume:focus {
     background-color: #0a192f;
     border-color: #64ffda;
-    color: #64ffda;
+    color: #64ffda !important;
 }
 .vertical-email-box{
     border-left: 2px solid #a8b2d1;
@@ -88,7 +88,7 @@ html, body {
  
   .separator::after {
     content: '';
-    border-bottom: 1px solid #ccd6f6;
+    border-bottom: 1px solid #b4b8c4;
     width: 300px;
   }
   
@@ -106,3 +106,96 @@ html, body {
     border-radius: 5%;
     background-color: #fff;
   }
+  
+.nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #0A192F;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #64ffda;
+    background: #0A192F;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #a8b2d1;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+.text-inside-box{
+    color: #b4b8c4;   
+    ;
+}
+.card{
+    background-color: #112240;
+}
+.icon-color{
+    color: #64ffda;
+}
+.highlight-green{
+    color:#64ffda;
+}
+.highlight-text-light{
+    color:#ccd6f6 !important;
+}
+.btn-card,
+.btn-card:hover,
+.btn-card:active,
+.btn-card:visited,
+.btn-card:focus {
+    background-color: #0a192f;
+    border-color: #64ffda;
+    color: #64ffda !important;
+}
+.card{
+    height: 300px;
+}
+.progress-bar {
+    background-color: #0a192f;
+}
+.btn-touch,
+.btn-touch:active,
+.btn-touch:hover,
+.btn-touch:visited
+{
+    color: #0a192f;
+    background-color: #64ffda;
+   
+}
+.touch-section{
+    margin-top: 200px !important;
+    margin-bottom: 200px !important;
+}
+.sticky-social{
+    position:fixed;
+    top: 40%;
+    right:28px;
+    padding:0px;
+    margin:0px;
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:7px 7px;
+    font-size:25px;
+    transition:all 0.8s ease-in-out;
+  }
+
+ 
